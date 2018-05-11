@@ -3,6 +3,11 @@
 -------------------------------------------------------------------------------
 ### `[07-May]` What will I do this week?
 - Continue the study of Package Generation of Céu-Maker
+    - add make.exe in céu-maker repository
+        - change instructions
+            - remove download section
+            - reinforce to use Git Bash
+    - change Makefile to automate the winrar section
 - Search for Arduino projects to compose the project's set of examples
 
 ### `[13-May]` What did I do last week?
