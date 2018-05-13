@@ -11,6 +11,11 @@
 - Search for Arduino projects to compose the project's set of examples
 
 ### `[13-May]` What did I do last week?
+- Completed the tasks nested in the study of Package Generation
+    - updated instructions
+    - generate script to use WinRAR via command line
+- Created a prototype of a GUI app for Céu-maker package generator
+- Postponed the search for Arduino projects
 
 -------------------------------------------------------------------------------
 `[30-Apr] -> [06-May]`
