@@ -1,0 +1,9 @@
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe.config
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\bin\Release\SelectDevice.pdb
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.csprojResolveAssemblyReference.cache
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.Form1.resources
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.Properties.Resources.resources
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.GenerateResource.Cache
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.exe
+C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.pdb
