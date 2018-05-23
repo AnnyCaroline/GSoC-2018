@@ -7,3 +7,13 @@ C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.Proper
 C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.GenerateResource.Cache
 C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.exe
 C:\Users\AnnyC\Desktop\SelectDevice\SelectDevice\obj\Release\SelectDevice.pdb
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe.config
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.pdb
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csprojResolveAssemblyReference.cache
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Form1.resources
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Properties.Resources.resources
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.GenerateResource.Cache
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.CoreCompileInputs.cache
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.exe
+C:\Users\Anny\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.pdb
