@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
+`[21-May] -> [27-May]`
+-------------------------------------------------------------------------------
+### `[21-May]` What will I do this week?
+
+### `[27-May]` What did I do last week?
+
+-------------------------------------------------------------------------------
 `[14-May] -> [20-May]`
 -------------------------------------------------------------------------------
 ### `[14-May]` What will I do this week?
@@ -7,6 +14,11 @@
 - User-friendly interface for end-user choose arduino board and port (céu-arduino)
 
 ### `[20-May]` What did I do last week?
+- Pull request: https://github.com/fsantanna/ceu-maker/pull/1
+- Started the studies of pico-ceu
+- Developed a Windows Forms Application with GUI to auxiliate the board selection
+    - Application: https://github.com/AnnyCaroline/ceu-maker-gsoc/tree/master/SelectDevice
+    - Integration with Céu-Maker: https://github.com/AnnyCaroline/ceu-maker/commit/305d559256df8fb909a07137a0930ca4e75dfef9
 -------------------------------------------------------------------------------
 `[07-May] -> [13-May]`
 -------------------------------------------------------------------------------
