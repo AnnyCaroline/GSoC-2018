@@ -37,11 +37,15 @@
             this.PID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtBoard = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblCpu = new System.Windows.Forms.Label();
+            this.comboCPU = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,14 +60,15 @@
             this.Name1,
             this.PID,
             this.VID,
-            this.SN});
+            this.SN,
+            this.mcu});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 29);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 38);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(694, 169);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // Port
@@ -105,10 +110,17 @@
             this.SN.ReadOnly = true;
             this.SN.Width = 150;
             // 
+            // mcu
+            // 
+            this.mcu.HeaderText = "mcu";
+            this.mcu.Name = "mcu";
+            this.mcu.ReadOnly = true;
+            this.mcu.Visible = false;
+            // 
             // txtPort
             // 
             this.txtPort.Enabled = false;
-            this.txtPort.Location = new System.Drawing.Point(25, 229);
+            this.txtPort.Location = new System.Drawing.Point(26, 238);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(100, 20);
             this.txtPort.TabIndex = 3;
@@ -116,7 +128,7 @@
             // txtBoard
             // 
             this.txtBoard.Enabled = false;
-            this.txtBoard.Location = new System.Drawing.Point(151, 229);
+            this.txtBoard.Location = new System.Drawing.Point(152, 238);
             this.txtBoard.Name = "txtBoard";
             this.txtBoard.Size = new System.Drawing.Size(100, 20);
             this.txtBoard.TabIndex = 4;
@@ -124,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 210);
+            this.label1.Location = new System.Drawing.Point(23, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 5;
@@ -133,7 +145,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 210);
+            this.label2.Location = new System.Drawing.Point(149, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 6;
@@ -141,20 +153,51 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(593, 210);
+            this.button1.Location = new System.Drawing.Point(594, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 42);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Select the device";
+            this.button1.TabIndex = 3;
+            this.button1.Text = "&Continue";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblCpu
+            // 
+            this.lblCpu.AutoSize = true;
+            this.lblCpu.Location = new System.Drawing.Point(280, 219);
+            this.lblCpu.Name = "lblCpu";
+            this.lblCpu.Size = new System.Drawing.Size(67, 13);
+            this.lblCpu.TabIndex = 9;
+            this.lblCpu.Text = "Select a cpu";
+            // 
+            // comboCPU
+            // 
+            this.comboCPU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCPU.FormattingEnabled = true;
+            this.comboCPU.Location = new System.Drawing.Point(283, 238);
+            this.comboCPU.Name = "comboCPU";
+            this.comboCPU.Size = new System.Drawing.Size(121, 21);
+            this.comboCPU.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Select the device";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(742, 271);
+            this.ClientSize = new System.Drawing.Size(748, 285);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboCPU);
+            this.Controls.Add(this.lblCpu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -178,13 +221,17 @@
         private System.Windows.Forms.TextBox txtBoard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblCpu;
+        private System.Windows.Forms.ComboBox comboCPU;
         private System.Windows.Forms.DataGridViewTextBoxColumn Port;
         private System.Windows.Forms.DataGridViewTextBoxColumn board;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PID;
         private System.Windows.Forms.DataGridViewTextBoxColumn VID;
         private System.Windows.Forms.DataGridViewTextBoxColumn SN;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mcu;
+        private System.Windows.Forms.Label label3;
     }
 }
 

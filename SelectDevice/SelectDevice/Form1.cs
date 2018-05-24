@@ -52,7 +52,7 @@ namespace SelectDevice
             try
             {
                 #if DEBUG
-                    string text = System.IO.File.ReadAllText(@"C:\Users\Anny\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+                    string text = System.IO.File.ReadAllText(@"C:\Users\AnnyC\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -81,29 +81,40 @@ namespace SelectDevice
                         {
                             counter++;
 
-                            //Pega as duas linhas correspondentes ao VID e PID
+                            //Get the VID and PID lines
                             string a = "";
                             a = regex("[a-zA-Z]+" + Regex.Escape(".") + "vid" + Regex.Escape(".") + "[0-9]=0x" + vid + "(\r)(\n)[a-zA-Z]+" + Regex.Escape(".") + "pid" + Regex.Escape(".") + "[0-9]=0x" + pid, text.ToString());
 
-                            //Pega a primeira palabra de [a]
+                            //Get first word from a
                             string b = "";
                             b = regex("[a-zA-Z]+(?=" + Regex.Escape(".") + "vid)", a.ToString());
 
-                            //Pesquisa b.build.board
-                            string board = "";
-                            board = regex("(?<=" + b + Regex.Escape(".") + "build" + Regex.Escape(".") + "board=)(\\w)+", text.ToString());
-
-                            //Pesquisa b.name
+                            //Get b.name
                             string name = "";
                             name = regex("(?<=" + b + Regex.Escape(".") + "name=).+", text.ToString());
 
+                            //Get b.menu.cpu.*.build.mcu 
+                            Regex r = new Regex("(?<=" + b + Regex.Escape(".") + "menu" + Regex.Escape(".") + "cpu" + Regex.Escape(".") + "[0-9a-zA-Z]+" + Regex.Escape(".") + "build" + Regex.Escape(".") + "mcu=).+");
+
+                            string mcu = "";
+                            bool firstFlag = true;
+                            foreach (Match match in r.Matches(text.ToString()))
+                            {
+                                if (firstFlag)
+                                    firstFlag = false;
+                                else
+                                    mcu += ",";
+
+                                mcu += match.Value;
+                            }
+
                             //Add to DataGrid
-                            this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn);
+                                this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn, mcu);
                         }
                     }
                 }
 
-                if (this.counter <= 1)
+                if (this.counter <= 0)
                 {
                     #if (!DEBUG)
                         this.Close();
@@ -124,10 +135,7 @@ namespace SelectDevice
                 MessageBox.Show("Select a device in the above list");
             }else
             {
-                //Console.WriteLine("sset ARD_BOARD=\"--board arduino:avr:" + txtBoard.Text + "\"");
-                //Console.WriteLine("sset ARD_PORT=\"--port " + txtPort.Text + "\"");
-
-                Console.WriteLine(txtBoard.Text + "," + txtPort.Text);
+                Console.WriteLine(txtBoard.Text + "," + txtPort.Text + "," + ":cpu=" + comboCPU.Text);
                 this.Close();
             }
             
@@ -139,8 +147,35 @@ namespace SelectDevice
             this.selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
 
             DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+
             txtPort.Text = Convert.ToString(selectedRow.Cells["port"].Value);
             txtBoard.Text = Convert.ToString(selectedRow.Cells["board"].Value);
+
+            this.comboCPU.Items.Clear();
+            string mcus = Convert.ToString(selectedRow.Cells["mcu"].Value);
+            string[] arr = mcus.Split(',');
+            foreach (string mcu in arr)
+                comboCPU.Items.Add(mcu);
+            comboCPU.SelectedIndex = 0;
+
+            //Hide comboCPU if no cpu selection is required
+            if (string.IsNullOrEmpty(mcus))
+            {
+                comboCPU.Visible = false;
+                lblCpu.Visible = false;
+            }
+            else
+            {
+                comboCPU.Visible = true;
+                lblCpu.Visible = true;
+            }
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
