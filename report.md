@@ -2,6 +2,12 @@
 `[21-May] -> [27-May]`
 -------------------------------------------------------------------------------
 ### `[21-May]` What will I do this week?
+- Fix the last pull request
+- Test and continue the implementation of the User interface to chosse arduino board and port
+    - allow the user to choose the cpu if necessary
+    - document
+    - pull request
+- Propose a aplication to use as example
 
 ### `[27-May]` What did I do last week?
 
