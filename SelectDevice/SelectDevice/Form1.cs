@@ -135,7 +135,12 @@ namespace SelectDevice
                 MessageBox.Show("Select a device in the above list");
             }else
             {
-                Console.WriteLine(txtBoard.Text + "," + txtPort.Text + "," + ":cpu=" + comboCPU.Text);
+                string cpu = "";
+                if (comboCPU.Text != "")
+                {
+                    cpu = ":cpu=" + comboCPU.Text;
+                }
+                Console.WriteLine(txtBoard.Text + "," + txtPort.Text + "," + cpu);
                 this.Close();
             }
             
