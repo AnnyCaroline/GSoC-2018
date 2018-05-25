@@ -46,6 +46,7 @@
             this.lblCpu = new System.Windows.Forms.Label();
             this.comboCPU = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnIDE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,15 +121,15 @@
             // txtPort
             // 
             this.txtPort.Enabled = false;
-            this.txtPort.Location = new System.Drawing.Point(26, 238);
+            this.txtPort.Location = new System.Drawing.Point(394, 252);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(100, 20);
+            this.txtPort.Size = new System.Drawing.Size(79, 20);
             this.txtPort.TabIndex = 3;
             // 
             // txtBoard
             // 
             this.txtBoard.Enabled = false;
-            this.txtBoard.Location = new System.Drawing.Point(152, 238);
+            this.txtBoard.Location = new System.Drawing.Point(479, 252);
             this.txtBoard.Name = "txtBoard";
             this.txtBoard.Size = new System.Drawing.Size(100, 20);
             this.txtBoard.TabIndex = 4;
@@ -136,7 +137,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 219);
+            this.label1.Location = new System.Drawing.Point(391, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 5;
@@ -145,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 219);
+            this.label2.Location = new System.Drawing.Point(476, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 6;
@@ -153,7 +154,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(594, 219);
+            this.button1.Location = new System.Drawing.Point(594, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 42);
             this.button1.TabIndex = 3;
@@ -164,7 +165,7 @@
             // lblCpu
             // 
             this.lblCpu.AutoSize = true;
-            this.lblCpu.Location = new System.Drawing.Point(280, 219);
+            this.lblCpu.Location = new System.Drawing.Point(264, 232);
             this.lblCpu.Name = "lblCpu";
             this.lblCpu.Size = new System.Drawing.Size(67, 13);
             this.lblCpu.TabIndex = 9;
@@ -174,7 +175,7 @@
             // 
             this.comboCPU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCPU.FormattingEnabled = true;
-            this.comboCPU.Location = new System.Drawing.Point(283, 238);
+            this.comboCPU.Location = new System.Drawing.Point(267, 251);
             this.comboCPU.Name = "comboCPU";
             this.comboCPU.Size = new System.Drawing.Size(121, 21);
             this.comboCPU.TabIndex = 2;
@@ -187,7 +188,16 @@
             this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Select the device";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnIDE
+            // 
+            this.btnIDE.Location = new System.Drawing.Point(26, 232);
+            this.btnIDE.Name = "btnIDE";
+            this.btnIDE.Size = new System.Drawing.Size(142, 42);
+            this.btnIDE.TabIndex = 12;
+            this.btnIDE.Text = "Use IDE configurations";
+            this.btnIDE.UseVisualStyleBackColor = true;
+            this.btnIDE.Click += new System.EventHandler(this.btnIDE_Click);
             // 
             // Form1
             // 
@@ -195,6 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(748, 285);
+            this.Controls.Add(this.btnIDE);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboCPU);
             this.Controls.Add(this.lblCpu);
@@ -232,6 +243,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SN;
         private System.Windows.Forms.DataGridViewTextBoxColumn mcu;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnIDE;
     }
 }
 

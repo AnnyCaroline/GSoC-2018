@@ -52,7 +52,7 @@ namespace SelectDevice
             try
             {
                 #if DEBUG
-                    string text = System.IO.File.ReadAllText(@"C:\Users\AnnyC\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+                    string text = System.IO.File.ReadAllText(@"C:\Users\Anny\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -113,13 +113,6 @@ namespace SelectDevice
                         }
                     }
                 }
-
-                if (this.counter <= 0)
-                {
-                    #if (!DEBUG)
-                        this.Close();
-                    #endif
-                }
             }
             catch
             {
@@ -178,9 +171,10 @@ namespace SelectDevice
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnIDE_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("ide");
+            this.Close();
         }
     }
 }
