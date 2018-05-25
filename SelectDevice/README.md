@@ -1,14 +1,14 @@
 # Céu-Maker: Select device
 
-![](https://uploaddeimagens.com.br/images/001/431/237/full/ceu-maker-select-device.png?1527049668)
+![](https://uploaddeimagens.com.br/images/001/435/661/full/selectdevice.png?1527270264)
 
 A GUI application that shows up the connected Arduino boards and allows user to select one. It was developed to be used together with Céu-Maker's [make-arduino.bat](https://github.com/fsantanna/ceu-maker/blob/master/ceu-maker/run/make-arduino.bat) file as follows:
 
 1. the ```make-arduino.bat``` is executed;
 2. ```make-arduino.bat``` execute the ```SelectDevice.exe```;
 3. in the oppened window, the user can:
-    - **select a board: **in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` a string containing the board, port, and if necessary, the cpu, separated by commas;
-    - **choose to use the last selected board/port/cpu in Arduino IDE: **in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` a string with the flag ```ide```. In practice, the ``make-arduino.bat``` will compile the code without --board and --port parameters. This may be a desirable behavior for a workaround solution, in the event that this application fails to recognize the board. This also may be useful if the end-user want to use a board from a diferent package or arch (currently, this program only recognizes boards from package "arduino" and arch "avr").
+    - **select a board:** in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` a string containing the board, port, and if necessary, the cpu, separated by commas;
+    - **choose to use the last selected board/port/cpu in Arduino IDE:** in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` a string with the flag ```ide```. In practice, the ``make-arduino.bat``` will compile the code without --board and --port parameters. This may be a desirable behavior for a workaround solution, in the event that this application fails to recognize the board. This also may be useful if the end-user want to use a board from a diferent package or arch (currently, this program only recognizes boards from package "arduino" and arch "avr").
 
 ## Inspiration 
 The Arduino IDE uses the file *arduino-1.8.3\hardware\arduino\avr\boards.txt* to identify ports and boards. With a VID/PID combination we can identify the USB device that is plugged and then search in this file for more information, such as name of the board.
