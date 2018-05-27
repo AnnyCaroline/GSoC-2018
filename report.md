@@ -10,6 +10,15 @@
 - Propose a aplication to use as example
 
 ### `[27-May]` What did I do last week?
+- Fixed the last pull request and made a [new one](https://github.com/fsantanna/ceu-maker/pull/3);
+- SelectDevice updates
+    - Implemented CPU selection in SelectDevice;
+    - Fixed a bug in SelectDevice - Reference [AnnyCaroline/ceu-maker-gsoc#1](AnnyCaroline/ceu-maker-gsoc#1);
+    - Implemented a workaround in SelectDevice App so that users can choose to select a board or use the IDE configurations (see [more](https://github.com/AnnyCaroline/ceu-maker-gsoc/tree/master/SelectDevice));
+- Changed WinRAR 64-bit to 32-bit;
+- Updated and fixes Céu-maker intructions;
+- Tested Céu-Maker with 3 Arduino boards: [video](https://youtu.be/U1Rzs9SMOyA);
+- VSCode with Céu-Arduino: [instructions](https://github.com/AnnyCaroline/ceu-maker-gsoc/blob/master/VSCode%20with%20C%C3%A9u-Maker/VSCode-with-ceu-maker.md) and [video](https://www.youtube.com/watch?v=iNG42KRNjjI);
 
 -------------------------------------------------------------------------------
 `[14-May] -> [20-May]`
