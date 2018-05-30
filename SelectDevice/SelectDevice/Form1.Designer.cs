@@ -47,6 +47,7 @@
             this.comboCPU = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIDE = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,12 +200,26 @@
             this.btnIDE.UseVisualStyleBackColor = true;
             this.btnIDE.Click += new System.EventHandler(this.btnIDE_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Image = global::SelectDevice.Properties.Resources.refresh1;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(642, 8);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(78, 24);
+            this.btnRefresh.TabIndex = 13;
+            this.btnRefresh.Text = "&Refresh";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(748, 285);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnIDE);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboCPU);
@@ -244,6 +259,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mcu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIDE;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 

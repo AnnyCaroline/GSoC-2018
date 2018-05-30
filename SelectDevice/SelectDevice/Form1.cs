@@ -40,7 +40,7 @@ namespace SelectDevice
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void loadBoards()
         {
             string port = "", vid = "", pid = "", sn = "";
 
@@ -52,13 +52,15 @@ namespace SelectDevice
             try
             {
                 #if DEBUG
-                    string text = System.IO.File.ReadAllText(@"C:\Users\Anny\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+                    string text = System.IO.File.ReadAllText(@"C:\Users\AnnyC\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
                     string text = System.IO.File.ReadAllText(currentPath + @"\..\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #endif
+
+                this.dataGridView1.Rows.Clear();
 
                 // Search all serial ports
                 foreach (ManagementObject queryObj in searcher.Get())
@@ -109,7 +111,7 @@ namespace SelectDevice
                             }
 
                             //Add to DataGrid
-                                this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn, mcu);
+                            this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn, mcu);
                         }
                     }
                 }
@@ -119,6 +121,11 @@ namespace SelectDevice
                 Console.WriteLine("Error: Cannot open boards.txt");
             }
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            loadBoards();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -141,40 +148,57 @@ namespace SelectDevice
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            //https://stackoverflow.com/questions/7657137/datagridview-full-row-selection-but-get-single-cell-value
-            this.selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
+            try{
+                //https://stackoverflow.com/questions/7657137/datagridview-full-row-selection-but-get-single-cell-value
+                this.selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
 
-            DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
 
-            txtPort.Text = Convert.ToString(selectedRow.Cells["port"].Value);
-            txtBoard.Text = Convert.ToString(selectedRow.Cells["board"].Value);
+                txtPort.Text = Convert.ToString(selectedRow.Cells["port"].Value);
+                txtBoard.Text = Convert.ToString(selectedRow.Cells["board"].Value);
 
-            this.comboCPU.Items.Clear();
-            string mcus = Convert.ToString(selectedRow.Cells["mcu"].Value);
-            string[] arr = mcus.Split(',');
-            foreach (string mcu in arr)
-                comboCPU.Items.Add(mcu);
-            comboCPU.SelectedIndex = 0;
+                this.comboCPU.Items.Clear();
+                string mcus = Convert.ToString(selectedRow.Cells["mcu"].Value);
+                string[] arr = mcus.Split(',');
+                foreach (string mcu in arr)
+                    comboCPU.Items.Add(mcu);
+                comboCPU.SelectedIndex = 0;
 
-            //Hide comboCPU if no cpu selection is required
-            if (string.IsNullOrEmpty(mcus))
-            {
-                comboCPU.Visible = false;
-                lblCpu.Visible = false;
+                //Hide comboCPU if no cpu selection is required
+                if (string.IsNullOrEmpty(mcus))
+                {
+                    comboCPU.Visible = false;
+                    lblCpu.Visible = false;
+                }
+                else
+                {
+                    comboCPU.Visible = true;
+                    lblCpu.Visible = true;
+                }
             }
-            else
+            catch
             {
-                comboCPU.Visible = true;
-                lblCpu.Visible = true;
+
             }
-
-
         }
 
         private void btnIDE_Click(object sender, EventArgs e)
         {
             Console.WriteLine("ide");
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loadBoards();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
         }
     }
 }
