@@ -5,6 +5,7 @@
 - Fix the issue #7
 
 ### `[10-Jun]` What did I do last week?
+- I found difficulties to fix the issue #7
 
 -------------------------------------------------------------------------------
 `[28-May] -> [03-Jun]`
