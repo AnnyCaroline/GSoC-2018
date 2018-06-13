@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
+`[04-Jun] -> [10-Jun]`
+-------------------------------------------------------------------------------
+### `[04-Jun]` What will I do this week?
+- Fix the issue #4
+
+### `[10-Jun]` What did I do last week?
+- I found difficulties to fix the issue #4
+
+-------------------------------------------------------------------------------
+`[28-May] -> [03-Jun]`
+-------------------------------------------------------------------------------
+### `[28-Jun]` What will I do this week?
+- Fix the issues from the last pull request (#4, #5, #6, #7)
+- Study the modifications in Céu-Maker 
+
+### `[03-Jun]` What did I do last week?
+- Fixed the issues (#5, #6, #7)
+- The issue #4 was postponed to next week
+
+-------------------------------------------------------------------------------
 `[21-May] -> [27-May]`
 -------------------------------------------------------------------------------
 ### `[21-May]` What will I do this week?
