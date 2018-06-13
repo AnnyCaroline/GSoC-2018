@@ -61,6 +61,9 @@ namespace SelectDevice
                 #endif
 
                 this.dataGridView1.Rows.Clear();
+                this.txtBoard.Clear();
+                this.txtPort.Clear();
+                this.comboCPU.Items.Clear();
 
                 // Search all serial ports
                 foreach (ManagementObject queryObj in searcher.Get())
@@ -105,7 +108,7 @@ namespace SelectDevice
                                 if (firstFlag)
                                     firstFlag = false;
                                 else
-                                    mcu += ",";
+                                    mcu += " ";
 
                                 mcu += match.Value;
                             }
@@ -135,12 +138,7 @@ namespace SelectDevice
                 MessageBox.Show("Select a device in the above list");
             }else
             {
-                string cpu = "";
-                if (comboCPU.Text != "")
-                {
-                    cpu = ":cpu=" + comboCPU.Text;
-                }
-                Console.WriteLine(txtBoard.Text + "," + txtPort.Text + "," + cpu);
+                Console.WriteLine(txtBoard.Text + " " + txtPort.Text + " " + comboCPU.Text);
                 this.Close();
             }
             
@@ -184,7 +182,6 @@ namespace SelectDevice
 
         private void btnIDE_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("ide");
             this.Close();
         }
 
