@@ -1,22 +1,42 @@
 -------------------------------------------------------------------------------
+`[11-Jun] -> [17-Jun]`
+-------------------------------------------------------------------------------
+### `[11-Jun]` What will I do this week?
+- Fix the issue [ceu-lang/ceu-maker#4](https://github.com/ceu-lang/ceu-maker/issues/4)
+    - ```[pico-ceu] API for Serial ports```
+- Fix the issue [ceu-lang/ceu-maker#8](https://github.com/ceu-lang/ceu-maker/issues/8)
+    - ```'tr' is not recognized as an internal command ```
+    - The error above shows up when a Céu-Arduino file is compiled. See the issue for more information.
+- Fix a refresh bug in SelectDevice.exe
+- Check if SelectDevice.exe can use IDE options properly, including compile throw a Network port
+    - In the IDE this is done like that:
+    ![arduino ide: choose network port](https://uploaddeimagens.com.br/images/001/468/246/full/arduino-network-port.png?1529165817)
+
+### `[17-Jun]` What did I do last week?
+- 
+- Fixed the issue [ceu-lang/ceu-maker#8](https://github.com/ceu-lang/ceu-maker/issues/8) by adding ```tr.exe``` bin from [GnuWin32](http://gnuwin32.sourceforge.net/) in Céu-Maker. This bin needed two dlls. One of them, ```libiconv2.dll``` is already present in ```ceu-maker/mingw/bin/``` with the name ```libiconv-2.dll```. Would be interesting to find a way to not have the same file twice.
+- The SelectDevice.exe refresh bug was fixed with the commits [50c1827](https://github.com/AnnyCaroline/ceu-maker-gsoc/commit/50c1827b825e300b55a95250ee492c8de8926427) and [f9796ac](https://github.com/ceu-lang/ceu-maker/commit/f9796ac26241a901c0f13ed9bc7bb5f9f97de25f)
+-
+
+-------------------------------------------------------------------------------
 `[04-Jun] -> [10-Jun]`
 -------------------------------------------------------------------------------
 ### `[04-Jun]` What will I do this week?
-- Fix the issue #4
+- Fix the issue [ceu-lang/ceu-maker#4](https://github.com/ceu-lang/ceu-maker#4)
 
 ### `[10-Jun]` What did I do last week?
-- I found difficulties to fix the issue #4
+- I found difficulties to fix the issue [ceu-lang/ceu-maker#4](https://github.com/ceu-lang/ceu-maker#4)
 
 -------------------------------------------------------------------------------
 `[28-May] -> [03-Jun]`
 -------------------------------------------------------------------------------
 ### `[28-Jun]` What will I do this week?
-- Fix the issues from the last pull request (#4, #5, #6, #7)
+- Fix the issues from the last pull request ([ceu-lang/ceu-maker#4](https://github.com/ceu-lang/ceu-maker#4), [ceu-lang/ceu-maker#5](https://github.com/ceu-lang/ceu-maker#5), [ceu-lang/ceu-maker#6](https://github.com/ceu-lang/ceu-maker#6), [ceu-lang/ceu-maker#7](https://github.com/ceu-lang/ceu-maker#7))
 - Study the modifications in Céu-Maker 
 
 ### `[03-Jun]` What did I do last week?
-- Fixed the issues (#5, #6, #7)
-- The issue #4 was postponed to next week
+- Fixed the issues ([ceu-lang/ceu-maker#5](https://github.com/ceu-lang/ceu-maker#5), [ceu-lang/ceu-maker#6](https://github.com/ceu-lang/ceu-maker#6), [ceu-lang/ceu-maker#7](https://github.com/ceu-lang/ceu-maker#7))
+- The issue [ceu-lang/ceu-maker#4](https://github.com/ceu-lang/ceu-maker#4) was postponed to next week
 
 -------------------------------------------------------------------------------
 `[21-May] -> [27-May]`
