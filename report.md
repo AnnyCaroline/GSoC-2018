@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
+`[18-Jun] -> [24-Jun]`
+-------------------------------------------------------------------------------
+### `[18-Jun]` What will I do this week?
+### `[24-Jun]` What did I do last week?
+-------------------------------------------------------------------------------
 `[11-Jun] -> [17-Jun]`
 -------------------------------------------------------------------------------
 ### `[11-Jun]` What will I do this week?
@@ -13,7 +18,8 @@
     ![arduino ide: choose network port](https://uploaddeimagens.com.br/images/001/468/246/full/arduino-network-port.png?1529165817)
 
 ### `[17-Jun]` What did I do last week?
-- 
+- Usart is working. Still need to implement Usart_TX and Usart_RX;
+    - The current work is in [Google Drive](https://drive.google.com/open?id=1_6XROOPD9lkG6xBLEZNndXt_xLAVoVk-)
 - Fixed the issue [ceu-lang/ceu-maker#8](https://github.com/ceu-lang/ceu-maker/issues/8) by adding ```tr.exe``` bin from [GnuWin32](http://gnuwin32.sourceforge.net/) in Céu-Maker. This bin needed two dlls. One of them, ```libiconv2.dll``` is already present in ```ceu-maker/mingw/bin/``` with the name ```libiconv-2.dll```. Would be interesting to find a way to not have the same file twice.
 - The SelectDevice.exe refresh bug was fixed with the commits [50c1827](https://github.com/AnnyCaroline/ceu-maker-gsoc/commit/50c1827b825e300b55a95250ee492c8de8926427) and [f9796ac](https://github.com/ceu-lang/ceu-maker/commit/f9796ac26241a901c0f13ed9bc7bb5f9f97de25f)
 -
