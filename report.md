@@ -2,6 +2,9 @@
 `[18-Jun] -> [24-Jun]`
 -------------------------------------------------------------------------------
 ### `[18-Jun]` What will I do this week?
+- Implement an application that uses Usart
+- Document Usart
+
 ### `[24-Jun]` What did I do last week?
 -------------------------------------------------------------------------------
 `[11-Jun] -> [17-Jun]`
