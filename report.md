@@ -4,8 +4,13 @@
 ### `[18-Jun]` What will I do this week?
 - Implement an application that uses Usart
 - Document Usart
+- Fix issue [ceu-lang/ceu-maker#9](https://github.com/ceu-lang/ceu-maker/issues/9)
+    - Executing pico-Céu code by double click
 
 ### `[24-Jun]` What did I do last week?
+- The app is in [https://github.com/AnnyCaroline/ceu-maker-gsoc/tree/master/usart](https://github.com/AnnyCaroline/ceu-maker-gsoc/tree/master/usart). This folder also contains the usart.ceu and an explanation of the application;
+- The [ceu-lang/ceu-maker#9](https://github.com/ceu-lang/ceu-maker/issues/9) was fixed.
+
 -------------------------------------------------------------------------------
 `[11-Jun] -> [17-Jun]`
 -------------------------------------------------------------------------------
