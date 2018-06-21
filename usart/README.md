@@ -23,7 +23,7 @@ The differentiation between the code for Arduino and the one for pico-Céu is do
 ```
 
 ### Arduino Circuit
-![](https://uploaddeimagens.com.br/images/001/475/276/full/ceu-maker-echo.png?1529551123)
+![](https://uploaddeimagens.com.br/images/001/476/114/full/ceu-maker-echo-2.png?1529594202)
 
 ### Céu-Arduino Code
 ```cpp
