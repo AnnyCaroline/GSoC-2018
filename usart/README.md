@@ -1,7 +1,7 @@
 # Content of this folder
 - usart.ceu: should be included in *ceu-maker\repos\pico-ceu\include* folder.
 - string.ceu: also should be included in *ceu-maker\repos\pico-ceu\include* folder. Includes a new function, ```String_Print```, that converts a Céu byte vector to a C char pointer to print that out.
-- example of serial por usage for Céu-Maker and pico-Céu.
+- example of serial port usage for Céu-Maker and pico-Céu.
 
 ## Echo app example
 
@@ -65,7 +65,7 @@ After checking that ```v==high``` the Arduino sends via serial port the string d
 await Usart(3);
 ```
 
-It starts by including ```usart.ceu``` and ```string.ceu``` for, just like in Arduino code, wraps the functionalities for serial communication and string manipulation. The ```await Usart(3)``` set up the serial communication for port 3. To check in each port your Arduino is connected, check Window's Device Manager.
+It starts by including ```usart.ceu``` and ```string.ceu``` that, just like in Arduino code, wraps the functionalities for serial communication and string manipulation. The ```await Usart(3)``` set up the serial communication for port 3. To check which port your Arduino is connected, check Windows Device Manager.
 
 ```
 loop do
@@ -94,4 +94,4 @@ The loop content can be devided in two groups: one before ```await 1s``` and oth
 ### Compiling
 As said in the beginning of this document, a unique file contains the code for Céu-Arduino and pico-Céu and can be drag and dropped to Céu-Arduino.exe and pico-Céu.exe. But, in this case, the order this programs execute do matter.
 
-When the pico-Céu application set up the serial port (using ```Usart(3)```, for example), the port (COM3 in this case) cannot be used by other app, i.e., the port become busy. Since the Céu-Arduino.exe needs a free port to load the sketch for Arduino board, make sure to not compile the Céu-Arduino application while the pico-Céu one is open. This same behavior can be observed when we try to load a sketch with Monitor serial Window opened in Arduino IDE.
+When the pico-Céu application set up the serial port (using ```Usart(3)```, for example), the port (COM3 in this case) cannot be used by other app, i.e., the port become busy. Since the Céu-Arduino.exe needs a free port to load the sketch for Arduino board, make sure to not compile the Céu-Arduino application while the pico-Céu one is open. This same behavior can be observed when we try to load a sketch with "Monitor serial" Window opened in Arduino IDE.
