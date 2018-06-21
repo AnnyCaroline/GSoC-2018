@@ -15,6 +15,3 @@
 }
 ```
 3. Add ```ceu-maker/bin``` to PATH environment variable
-
--------------------------------------------------------------------------------
-**ToDo:** pico-Céu is not working
