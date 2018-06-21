@@ -3,6 +3,8 @@
 - string.ceu: also should be included in *ceu-maker\repos\pico-ceu\include* folder. Includes a new function, ```String_Print```, that converts a Céu byte vector to a C char pointer to print that out.
 - example of serial port usage for Céu-Maker and pico-Céu.
 
+[Video](https://youtu.be/u72g1txgyMo)
+
 ## Echo app example
 
 A simple echo application to exemplify the communication using serial port between Céu-Arduino and pico-Céu. Its operation is as follows:
