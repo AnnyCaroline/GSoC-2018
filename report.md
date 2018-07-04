@@ -1,5 +1,14 @@
 -------------------------------------------------------------------------------
-`[15-Jun] -> [01-Jun]`
+`[02-Jul] -> [08-Jul]`
+-------------------------------------------------------------------------------
+### `[02-Jul]` What will I do this week?
+- Fix a bug in SelectDevice.exe - CPU comboBox was displaying all CPUs in one line 
+
+### `[08-Jul]` What did I do last week?
+- SelectDevice bug fixed in [ceu-maker-gsoc cd832c2](https://github.com/AnnyCaroline/ceu-maker-gsoc/commit/cd832c2c76b59447e0f22e34ea8cfa9323131ae4) and [ceu-maker 6a167d2](https://github.com/ceu-lang/ceu-maker/commit/6a167d29f8be45d8095144231de80660107e4572)
+
+-------------------------------------------------------------------------------
+`[25-Jun] -> [01-Jun]`
 -------------------------------------------------------------------------------
 ### `[25-Jun]` What will I do this week?
 - Fix issue [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10)
