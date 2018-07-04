@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
+`[15-Jun] -> [01-Jun]`
+-------------------------------------------------------------------------------
+### `[25-Jun]` What will I do this week?
+- Fix issue [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10)
+    - pico-Céu.exe and Céu-Arduino.exe don't compile files with space in name
+- Pico-Céu usart
+  - include in pico-céu repository
+      - as explaned in , string.ceu was also modified. This file should be added in Céu repository
+  - change *await* to *spawn* and use *finalize* (consequently is necessary to use *NEVER*)
+  - allow the user to use the default port number when calling *usart*
+
+### `[01-Jun]` What did I do last week?
+- The issue was mostly fixed. Some things that We still need to do:
+    - Check if *Storm* example still works after the changes and if it works with whitespaces in its filepath.
+- usart 
+
+
+-------------------------------------------------------------------------------
 `[18-Jun] -> [24-Jun]`
 -------------------------------------------------------------------------------
 ### `[18-Jun]` What will I do this week?
