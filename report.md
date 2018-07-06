@@ -18,6 +18,7 @@
 - Usart
     - replace await with spawn, NEVER with finalize
     - allow the user to pass _ as parameter to `Usart` function. In this case, the connected port is used. If more than one port is connected, then the first detect is choosen.
+- Check if the modifications in Céu-Arduino and pico-Céu repositories don't produce any error
 
 ### `[08-Jul]` What did I do last week?
 - SelectDevice bug fixed in [ceu-maker-gsoc cd832c2](https://github.com/AnnyCaroline/ceu-maker-gsoc/commit/cd832c2c76b59447e0f22e34ea8cfa9323131ae4) and [ceu-maker 6a167d2](https://github.com/ceu-lang/ceu-maker/commit/6a167d29f8be45d8095144231de80660107e4572)
