@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
-`[02-Jul] -> [08-Jul]`
+`[02-Jul] -> [09-Jul]`
 -------------------------------------------------------------------------------
 ### `[02-Jul]` What will I do this week?
 - Disable the option to use IDE configuration
 - Install Linux in a Virtual Box 
 
 ### `[09-Jul]` What did I do last week?
-
+- The IDE configuration was disabled ([ceu-lang/ceu-maker#13](https://github.com/ceu-lang/ceu-maker/issues/13))
 
 -------------------------------------------------------------------------------
 `[02-Jul] -> [08-Jul]`
