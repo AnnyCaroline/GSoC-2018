@@ -2,6 +2,16 @@
 `[02-Jul] -> [08-Jul]`
 -------------------------------------------------------------------------------
 ### `[02-Jul]` What will I do this week?
+- Disable the option to use IDE configuration
+- Install Linux in a Virtual Box 
+
+### `[09-Jul]` What did I do last week?
+
+
+-------------------------------------------------------------------------------
+`[02-Jul] -> [08-Jul]`
+-------------------------------------------------------------------------------
+### `[02-Jul]` What will I do this week?
 - Fix a bug in SelectDevice.exe - CPU comboBox was displaying all CPUs in one line
 - Stop compiling when close SelectDevice Window [ceu-lang/ceu-maker#12](https://github.com/ceu-lang/ceu-maker/issues/12)
 - Start writing the tutorial
