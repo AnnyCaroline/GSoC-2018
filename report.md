@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------
 ### `[02-Jul]` What will I do this week?
 - Fix a bug in SelectDevice.exe - CPU comboBox was displaying all CPUs in one line
-- Stop compiling when close SelectDevice Window - 
+- Stop compiling when close SelectDevice Window [ceu-lang/ceu-maker#12](https://github.com/ceu-lang/ceu-maker/issues/12)
 - Start writing the tutorial
     - The tutorials must include
         - graphical interaction (pico-Céu)
@@ -22,6 +22,14 @@
 
 ### `[08-Jul]` What did I do last week?
 - SelectDevice bug fixed in [ceu-maker-gsoc cd832c2](https://github.com/AnnyCaroline/ceu-maker-gsoc/commit/cd832c2c76b59447e0f22e34ea8cfa9323131ae4) and [ceu-maker 6a167d2](https://github.com/ceu-lang/ceu-maker/commit/6a167d29f8be45d8095144231de80660107e4572)
+- Fixed [ceu-lang/ceu-maker#12](https://github.com/ceu-lang/ceu-maker/issues/12) "Stop compiling when close SelectDevice Window"
+- 
+- The bug when use the IDE configuration was not solved yet. The arduino Makefile was changed to support different compilation process when using the IDE configs, but I didn't figure out what is causing the bug
+- The issue [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10) was partially fixed. Files with space in names can now be compilled, but this created a error when compiling a folder (with main.ceu file in it).
+- Usart
+    - the replacements were made in [ceu-maker b9b0a36](https://github.com/ceu-lang/ceu-maker/commit/b9b0a36e8af91ddbb11d173a298cc4a775a16c7c) and in [pico-ceu fe94587](https://github.com/ceu-lang/pico-ceu/commit/fe94587aac2cf8ab187c69233e232ae86f91cd85)
+    - still working in it
+- need help in "Check if the modifications in Céu-Arduino and pico-Céu repositories don't produce any error"
 
 -------------------------------------------------------------------------------
 `[25-Jun] -> [01-Jun]`
