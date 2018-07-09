@@ -27,7 +27,7 @@
 - The bug when use the IDE configuration was not solved yet. The arduino Makefile was changed to support different compilation process when using the IDE configs, but I didn't figure out what is causing the bug
 - The issue [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10) was partially fixed. Files with space in names can now be compilled, but this created a error when compiling a folder (with main.ceu file in it).
 - Usart
-    - the replacements were made in [ceu-maker b9b0a36](https://github.com/ceu-lang/ceu-maker/commit/b9b0a36e8af91ddbb11d173a298cc4a775a16c7c) and in [pico-ceu fe94587](https://github.com/ceu-lang/pico-ceu/commit/fe94587aac2cf8ab187c69233e232ae86f91cd85)
+    - the replacements were made in [ceu-maker 8f58b08](https://github.com/ceu-lang/ceu-maker/commit/8f58b080a3df1c3842e1e1f642366d76d2cfbb75) and in [pico-ceu fe94587](https://github.com/ceu-lang/pico-ceu/commit/fe94587aac2cf8ab187c69233e232ae86f91cd85)
     - still working in it
 - need help in "Check if the modifications in Céu-Arduino and pico-Céu repositories don't produce any error"
 
