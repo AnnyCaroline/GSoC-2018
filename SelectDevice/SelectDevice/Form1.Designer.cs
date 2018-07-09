@@ -134,7 +134,6 @@
             this.comboCPU.Name = "comboCPU";
             this.comboCPU.Size = new System.Drawing.Size(121, 21);
             this.comboCPU.TabIndex = 2;
-            this.comboCPU.SelectedIndexChanged += new System.EventHandler(this.comboCPU_SelectedIndexChanged);
             // 
             // label3
             // 

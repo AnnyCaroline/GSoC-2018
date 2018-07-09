@@ -121,7 +121,7 @@ namespace SelectDevice
             }
             catch
             {
-                Console.WriteLine("Error: Cannot open boards.txt");
+                //Console.WriteLine("Error: Cannot open boards.txt");
             }
 
         }
@@ -182,25 +182,13 @@ namespace SelectDevice
 
         private void btnIDE_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("ide");
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             loadBoards();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void comboCPU_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
