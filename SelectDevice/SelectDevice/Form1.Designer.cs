@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.board = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtBoard = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,13 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnIDE = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.board = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +72,51 @@
             this.dataGridView1.Size = new System.Drawing.Size(694, 169);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // Port
+            // 
+            this.Port.HeaderText = "Port";
+            this.Port.Name = "Port";
+            this.Port.ReadOnly = true;
+            // 
+            // board
+            // 
+            this.board.HeaderText = "board";
+            this.board.Name = "board";
+            this.board.ReadOnly = true;
+            this.board.Visible = false;
+            // 
+            // Name1
+            // 
+            this.Name1.HeaderText = "Name";
+            this.Name1.Name = "Name1";
+            this.Name1.ReadOnly = true;
+            this.Name1.Width = 200;
+            // 
+            // PID
+            // 
+            this.PID.HeaderText = "PID";
+            this.PID.Name = "PID";
+            this.PID.ReadOnly = true;
+            // 
+            // VID
+            // 
+            this.VID.HeaderText = "VID";
+            this.VID.Name = "VID";
+            this.VID.ReadOnly = true;
+            // 
+            // SN
+            // 
+            this.SN.HeaderText = "SN";
+            this.SN.Name = "SN";
+            this.SN.ReadOnly = true;
+            this.SN.Width = 150;
+            // 
+            // mcu
+            // 
+            this.mcu.HeaderText = "mcu";
+            this.mcu.Name = "mcu";
+            this.mcu.ReadOnly = true;
             // 
             // txtPort
             // 
@@ -152,6 +197,7 @@
             this.btnIDE.TabIndex = 12;
             this.btnIDE.Text = "Use IDE configurations";
             this.btnIDE.UseVisualStyleBackColor = true;
+            this.btnIDE.Visible = false;
             this.btnIDE.Click += new System.EventHandler(this.btnIDE_Click);
             // 
             // btnRefresh
@@ -166,51 +212,6 @@
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Port
-            // 
-            this.Port.HeaderText = "Port";
-            this.Port.Name = "Port";
-            this.Port.ReadOnly = true;
-            // 
-            // board
-            // 
-            this.board.HeaderText = "board";
-            this.board.Name = "board";
-            this.board.ReadOnly = true;
-            this.board.Visible = false;
-            // 
-            // Name1
-            // 
-            this.Name1.HeaderText = "Name";
-            this.Name1.Name = "Name1";
-            this.Name1.ReadOnly = true;
-            this.Name1.Width = 200;
-            // 
-            // PID
-            // 
-            this.PID.HeaderText = "PID";
-            this.PID.Name = "PID";
-            this.PID.ReadOnly = true;
-            // 
-            // VID
-            // 
-            this.VID.HeaderText = "VID";
-            this.VID.Name = "VID";
-            this.VID.ReadOnly = true;
-            // 
-            // SN
-            // 
-            this.SN.HeaderText = "SN";
-            this.SN.Name = "SN";
-            this.SN.ReadOnly = true;
-            this.SN.Width = 150;
-            // 
-            // mcu
-            // 
-            this.mcu.HeaderText = "mcu";
-            this.mcu.Name = "mcu";
-            this.mcu.ReadOnly = true;
             // 
             // Form1
             // 
