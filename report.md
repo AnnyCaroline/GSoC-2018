@@ -1,12 +1,24 @@
 -------------------------------------------------------------------------------
-`[02-Jul] -> [09-Jul]`
+`[09-Jul] -> [15-Jul]`
 -------------------------------------------------------------------------------
-### `[02-Jul]` What will I do this week?
+### `[16-Jul]` What will I do this week?
+- Create tutorial and an example showing arduino functionalities
+- Create a tutorial and an example showing the communicantion via serial
+
+### `[22-Jul]` What did I do last week?
+
+-------------------------------------------------------------------------------
+`[09-Jul] -> [15-Jul]`
+-------------------------------------------------------------------------------
+### `[09-Jul]` What will I do this week?
 - Disable the option to use IDE configuration
 - Install Linux in a Virtual Box 
+- Create a tutorial and an example about pico-céu graphics
 
-### `[09-Jul]` What did I do last week?
+### `[15-Jul]` What did I do last week?
 - The IDE configuration was disabled ([ceu-lang/ceu-maker#13](https://github.com/ceu-lang/ceu-maker/issues/13))
+- 
+- The tutorial and the example are in pico-ceu repository, inside examples/race folder (version pre-v0.40)
 
 -------------------------------------------------------------------------------
 `[02-Jul] -> [08-Jul]`
