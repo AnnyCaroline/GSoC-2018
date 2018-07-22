@@ -4,8 +4,12 @@
 ### `[16-Jul]` What will I do this week?
 - Create tutorial and an example showing arduino functionalities
 - Create a tutorial and an example showing the communicantion via serial
+- Create a tutorial and an example showing the network communication
 
 ### `[22-Jul]` What did I do last week?
+-
+-
+- pico-ceu/examples/move-net (version pre-v0.40)
 
 -------------------------------------------------------------------------------
 `[09-Jul] -> [15-Jul]`
@@ -17,7 +21,7 @@
 
 ### `[15-Jul]` What did I do last week?
 - The IDE configuration was disabled ([ceu-lang/ceu-maker#13](https://github.com/ceu-lang/ceu-maker/issues/13))
-- 
+- ok
 - The tutorial and the example are in pico-ceu repository, inside examples/race folder (version pre-v0.40)
 
 -------------------------------------------------------------------------------
