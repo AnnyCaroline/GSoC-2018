@@ -20,12 +20,23 @@ To create a new release of Céu-Maker, developers needed too manually clone the 
 
 Now, changes in Makefile are no longer necessary, make binary was included in Céu-Maker repository and the winrar process was automated. The developer only need to execute a single command using GitBash, that is normally availlable to anyone who uses Git on Windows.
 
-## Upgrade in Céu-Arduino compilation
+## Allow user to select a board during Céu-Arduino compilation
 Now the user can select the Arduino board and port using Céu-Maker. We developed a GUI application (located in [/SelectDevice](SelectDevice)) that, when the user compiles a source code, list all the connected Arduino boards and allow the user to select one. 
 
 ToDo: add SelectDevice print
 ![]()
 
-## 
-## 
+## Tutorial to integrate Visual Studio Code with Céu-Maker
+We created a short tutorial to explain how to add an option in Visual Studio Code to compile Céu source code without leaving the code editor. The tutorial can be accessed [here](/VSCode with Céu-Maker).
+
+## Pico-Céu API for serial ports (Usart)
+ToDo: add link of arduino usart api
+A pico-Céu API to facilitate the use of serial communication. It was basead on the Céu-Arduino Usart API ([]()) so that the user could use the same API in both enviroments.
+
+## Code examples with explanation
+During the GSoC we developed the following tutorials:
+- race.ceu: a pico-Céu game used to explain features of pico-Céu, such as graphical draw, sound, parallel compositions and window configuration;
+- move-net.ceu: in this example we explain how to use Céu NETWORK features creating a distributed version of [move.ceu example](), in which a user of one instance of the application can movement a white pixel around the window and a user from the other instance can control a green pixel;
+- echo-usart: demonstrate the use of usart API. In this example, the pico-Céu application receives a message from an Arduino connected via serial port and send it back, working as an echo server.
+
 
