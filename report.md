@@ -3,13 +3,12 @@
 -------------------------------------------------------------------------------
 ### `[16-Jul]` What will I do this week?
 - Create tutorial and an example showing arduino functionalities
-- Create a tutorial and an example showing the communicantion via serial
 - Create a tutorial and an example showing the network communication
 
 ### `[22-Jul]` What did I do last week?
--
--
+- postponed to next week
 - pico-ceu/examples/move-net (version pre-v0.40)
+- update the pico-ceu/examples/move-net to cover more Céu features
 
 -------------------------------------------------------------------------------
 `[09-Jul] -> [15-Jul]`
