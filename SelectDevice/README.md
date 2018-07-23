@@ -42,7 +42,7 @@ https://www.voti.nl/docs/usb-pid.html
 https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc
 - Explanation about package, arch and board in command line --board:  
 https://forum.arduino.cc/index.php?topic=366484.0
-- Arduino IDE 1.5 3rd party Hardware specification
+- Arduino IDE 1.5 3rd party Hardware specification  
 https://github.com/arduino/arduino/wiki/arduino-ide-1.5-3rd-party-hardware-specification
-- Visual Studio 2015: How to: Set Debug and Release Configurations
+- Visual Studio 2015: How to: Set Debug and Release Configurations  
 https://msdn.microsoft.com/en-us/library/wx0123s5.aspx
