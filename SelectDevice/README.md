@@ -2,15 +2,15 @@
 
 ![](https://uploaddeimagens.com.br/images/001/435/661/full/selectdevice.png?1527270264)
 
-A GUI application that shows up the connected Arduino boards and allows user to select one. It was developed to be used together with Céu-Maker's [make-arduino.bat](https://github.com/fsantanna/ceu-maker/blob/master/ceu-maker/run/make-arduino.bat) file as follows:
+A GUI application that shows up the connected Arduino boards and allows the user to select one. It was developed to be used together with [make-arduino.bat file](https://github.com/fsantanna/ceu-maker/blob/master/ceu-maker/run/make-arduino.bat) (from Céu-Maker) as follows:
 
 1. the ```make-arduino.bat``` is executed;
-2. ```make-arduino.bat``` execute the ```SelectDevice.exe```;
+2. ```make-arduino.bat``` executes the ```SelectDevice.exe```;
 3. in the oppened window, the user can:
-    - **select a board:** in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` a string containing the board, port, and if necessary, the cpu, separated by commas;
-    - **close the window:** in this case the ```SelectDevice.exe``` return to the ```make-arduino.bat``` an empty string.
+    - **select a board:** in this case the ```SelectDevice.exe``` returns to the ```make-arduino.bat``` a string containing the board, port, and if necessary, the cpu, separated by empty spaces;
+    - **close the window:** in this case the ```SelectDevice.exe``` returns to the ```make-arduino.bat``` an empty string.
 
-> the ```make-arduino.bat``` check if the received string is empty or not. If is, the ```make-arduino.bat``` finalize. If the string is not empty, it strips the string and pass the information (board, port and cpu) to Arduino Makefile.
+> the ```make-arduino.bat``` check if the received string is empty or not. If it is, the ```make-arduino.bat``` finalize. If the string is not empty, it strips the string and pass the information (board, port and cpu) to Arduino Makefile.
 
 ## Inspiration 
 The Arduino IDE uses the file *arduino-1.8.3\hardware\arduino\avr\boards.txt* to identify ports and boards. With a VID/PID combination we can identify the USB device that is plugged and then search in this file for more information, such as the name of the board.
@@ -44,3 +44,5 @@ https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc
 https://forum.arduino.cc/index.php?topic=366484.0
 - Arduino IDE 1.5 3rd party Hardware specification
 https://github.com/arduino/arduino/wiki/arduino-ide-1.5-3rd-party-hardware-specification
+- Visual Studio 2015: How to: Set Debug and Release Configurations
+https://msdn.microsoft.com/en-us/library/wx0123s5.aspx
