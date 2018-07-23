@@ -8,6 +8,11 @@
 - close the remaining issues
 
 ### `[29-Jul]` What did I do last week?
+-
+-
+-
+- close the remaining issues
+    - updated SelectDevice README.md - close [ceu-maker-gsoc#3](https://github.com/AnnyCaroline/ceu-maker-gsoc/issues/3)
 
 -------------------------------------------------------------------------------
 `[16-Jul] -> [22-Jul]`
