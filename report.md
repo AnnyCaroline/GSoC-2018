@@ -13,7 +13,7 @@
 - document how to use resources (```res``` folder);
 
 ### `[29-Jul]` What did I do last week?
--
+- created a race-frame.ceu with a tutorial (version using Framw Management) - [pico-céu/examples/race-frames](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race-frames)
 -
 - close the remaining issues
     - updated SelectDevice README.md - close [ceu-maker-gsoc#3](https://github.com/AnnyCaroline/ceu-maker-gsoc/issues/3)
