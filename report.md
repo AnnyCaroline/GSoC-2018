@@ -18,7 +18,7 @@
 - close the remaining issues
     - updated SelectDevice README.md - close [ceu-maker-gsoc#3](https://github.com/AnnyCaroline/ceu-maker-gsoc/issues/3)
     - pico-Céu.exe and Céu-Arduino.exe don't compile files with space in name - close [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10)
--
+- isn't better to realease a pre-v0.40 after the GSoC? With all examples, tutorials, docs, and working on Ubuntu?
 - changed move-net.ceu to use string lib;
 -
 -
