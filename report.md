@@ -7,19 +7,19 @@
 - list Arduino functionalities and create an example, with tutorial, that covers its features;
 - close the remaining issues;
 - generate a new release of Céu-Maker;
-- change race.ceu to use string lib;
+- change move-net.ceu to use string lib;
 - [pico-Céu] solve a bug in WINDOW_SET_SIZE [ceu-lang/pico-ceu#1](https://github.com/ceu-lang/pico-ceu/issues/1)
 - study the usage of mkdocs, mkdocs2pandoc and pandoc;
 - document how to use resources (```res``` folder);
 
 ### `[29-Jul]` What did I do last week?
-- created a race-frame.ceu with a tutorial (version using Framw Management) - [pico-céu/examples/race-frames](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race-frames)
--
+- created a race-frame.ceu with a tutorial (version using Frame Management) - [pico-céu/examples/race-frames](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race-frames)
+- 
 - close the remaining issues
     - updated SelectDevice README.md - close [ceu-maker-gsoc#3](https://github.com/AnnyCaroline/ceu-maker-gsoc/issues/3)
     - pico-Céu.exe and Céu-Arduino.exe don't compile files with space in name - close [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10)
 -
--
+- changed move-net.ceu to use string lib;
 -
 -
 -
