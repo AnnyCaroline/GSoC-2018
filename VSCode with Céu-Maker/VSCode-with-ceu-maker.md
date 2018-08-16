@@ -6,7 +6,7 @@
 1. Install [Open in Application](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-open-in-application) extension  
 2. *File > Preferences > Settings* and add this configurations:
 ```json
-"openInApplication.applications:" {
+"openInApplication.applications": {
     "ceu": ["Céu-Arduino.exe", "pico-Céu.exe"]
 },
 
