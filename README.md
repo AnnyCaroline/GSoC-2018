@@ -26,15 +26,16 @@ Now the user can select the Arduino board and port using Céu-Maker. We develope
 ![SelectDevice.png](images/SelectDevice.png)
 
 ## Tutorial to integrate Visual Studio Code with Céu-Maker
-We created a short tutorial to explain how to add an option in Visual Studio Code to compile Céu source code without leaving the code editor. The tutorial can be accessed [here](/VSCode with Céu-Maker).
+We created a short tutorial to explain how to add an option in Visual Studio Code to compile Céu source code without leaving the code editor. The tutorial can be accessed [here](/VSCode%20with%20Céu-Maker). It seems like will be possible to install the VSCode without privileges ([check the discussion here](https://github.com/Microsoft/vscode/issues/534#issuecomment-384580829)). When this become a reality, the Notepad++ could be replaced.
 
 ## Pico-Céu API for serial ports (Usart)
 A pico-Céu API to facilitate the use of serial communication. It was basead on the [Céu-Arduino Usart API](https://github.com/ceu-arduino/driver-usart) so that the user could use the same API in both enviroments. The API can be checked in [/ceu-lang/pico-ceu/include/usart.ceu](https://github.com/ceu-lang/pico-ceu/blob/pre-v0.40/include/usart.ceu).
 
 ## Code examples with explanation
 During the GSoC we developed the following tutorials:
-- race.ceu: a pico-Céu game used to explain features of pico-Céu, such as graphical draw, sound, parallel compositions and window configuration;
-- move-net.ceu: in this example we explain how to use Céu NETWORK features creating a distributed version of [move.ceu example](https://github.com/ceu-lang/pico-ceu/blob/pre-v0.40/examples/move.ceu), in which a user of one instance of the application can movement a white pixel around the window and a user from the other instance can control a green pixel;
-- echo-usart: demonstrate the use of ```usart``` API. In this example, the pico-Céu application receives a message from an Arduino connected via serial port and send it back, working as an echo server.
+- [race.ceu](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race): a pico-Céu game used to explain features of pico-Céu, such as graphical draw, sound, parallel compositions and window configuration;
+- [race-frames](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race-frames): how to develop the race game using frame features;
+- [move-net](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/move-net): in this example we explain how to use Céu NETWORK features creating a distributed version of [move.ceu example](https://github.com/ceu-lang/pico-ceu/blob/pre-v0.40/examples/move.ceu), in which a user of one instance of the application can movement a white pixel around the window and a user from the other instance can control a green one;
+- [echo-usart](https://github.com/ceu-lang/ceu-maker/tree/pre-v0.40/ceu-maker/examples/both/echo-usart): demonstrate the use of ```usart``` API. In this example, the pico-Céu application receives a message from an Arduino connected via serial port and send it back, working as an echo server.
 
 

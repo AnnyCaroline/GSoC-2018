@@ -46,9 +46,9 @@
 - [x] NET_RECEIVE
 
 ## Frame Management
-- [ ] FRAMES_SET
-- [ ] FRAMES_UPDATE
-- [ ] FRAMES_REDRAW
+- [x] FRAMES_SET
+- [x] FRAMES_UPDATE
+- [x] FRAMES_REDRAW
 
 ## Window Management
 ### Configuration

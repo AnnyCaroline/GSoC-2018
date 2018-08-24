@@ -2,12 +2,27 @@
 `[23-Jul] -> [29-Jul]`
 -------------------------------------------------------------------------------
 ### `[23-Jul]` What will I do this week?
-- translate the tutorials;
 - create a pico-Céu example (with tutorial) that covers the remaining resources;
-- list arduino functionalities and create an example, with tutorial, that covers its features;
-- close the remaining issues
+    - can be a new version of race.ceu, but using Frame Management
+- list Arduino functionalities and create an example, with tutorial, that covers its features;
+- close the remaining issues;
+- generate a new release of Céu-Maker;
+- change move-net.ceu to use string lib;
+- [pico-Céu] solve a bug in WINDOW_SET_SIZE [ceu-lang/pico-ceu#1](https://github.com/ceu-lang/pico-ceu/issues/1)
+- study the usage of mkdocs, mkdocs2pandoc and pandoc;
+- document how to use resources (```res``` folder);
 
 ### `[29-Jul]` What did I do last week?
+- created a race-frame.ceu with a tutorial (version using Frame Management) - [pico-céu/examples/race-frames](https://github.com/ceu-lang/pico-ceu/tree/pre-v0.40/examples/race-frames)
+- 
+- close the remaining issues
+    - updated SelectDevice README.md - close [ceu-maker-gsoc#3](https://github.com/AnnyCaroline/ceu-maker-gsoc/issues/3)
+    - pico-Céu.exe and Céu-Arduino.exe don't compile files with space in name - close [ceu-lang/ceu-maker#10](https://github.com/ceu-lang/ceu-maker/issues/10)
+- isn't better to realease a pre-v0.40 after the GSoC? With all examples, tutorials, docs, and working on Ubuntu?
+- changed move-net.ceu to use string lib;
+-
+-
+-
 
 -------------------------------------------------------------------------------
 `[16-Jul] -> [22-Jul]`
@@ -19,7 +34,7 @@
 ### `[22-Jul]` What did I do last week?
 - postponed to next week
 - pico-ceu/examples/move-net (version pre-v0.40)
-- update the pico-ceu/examples/move-net to cover more Céu features
+- update the pico-ceu/examples/move-net to cover more Céu features (version pre-v0.40)
 
 -------------------------------------------------------------------------------
 `[09-Jul] -> [15-Jul]`
