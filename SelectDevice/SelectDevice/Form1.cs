@@ -52,7 +52,7 @@ namespace SelectDevice
             try
             {
                 #if DEBUG
-                    string text = System.IO.File.ReadAllText(@"C:\Users\Anny\Desktop\ceu-maker\ceu-maker\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+                    string text = System.IO.File.ReadAllText(@"C:\Users\Anny\Desktop\ceu-maker\ceu-maker\windows\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -102,19 +102,31 @@ namespace SelectDevice
                             Regex r = new Regex("(?<=" + b + Regex.Escape(".") + "menu" + Regex.Escape(".") + "cpu" + Regex.Escape(".") + "[0-9a-zA-Z]+" + Regex.Escape(".") + "build" + Regex.Escape(".") + "mcu=).+");
 
                             string mcu = "";
+                            string cpu = "";
                             bool firstFlag = true;
                             foreach (Match match in r.Matches(text.ToString()))
                             {
+
+                                //Get cpu of that mcu
+                                string c = "";
+                                c = regex(b + Regex.Escape(".") + "menu" + Regex.Escape(".") + "cpu" + Regex.Escape(".") + "[0-9a-zA-Z]+" + Regex.Escape(".") + "build" + Regex.Escape(".") + "mcu=" + match.Value, text.ToString());
+
+                                string[] arrC = c.Split('.');
+
                                 if (firstFlag)
                                     firstFlag = false;
                                 else
+                                {
                                     mcu += ",";
-
+                                    cpu += ",";
+                                }
+                                    
                                 mcu += match.Value;
+                                cpu += arrC[3];
                             }
 
                             //Add to DataGrid
-                            this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn, mcu);
+                            this.dataGridView1.Rows.Add(port, b, name, pid, vid, sn, mcu, cpu);
                         }
                     }
                 }
@@ -138,7 +150,7 @@ namespace SelectDevice
                 MessageBox.Show("Select a device in the above list");
             }else
             {
-                Console.WriteLine(txtBoard.Text + " " + txtPort.Text + " " + comboCPU.Text);
+                Console.WriteLine(txtBoard.Text + " " + txtPort.Text + " " + comboCPU.Text + " " + comboMCU.Text);
                 this.Close();
             }
             
@@ -156,14 +168,23 @@ namespace SelectDevice
                 txtBoard.Text = Convert.ToString(selectedRow.Cells["board"].Value);
 
                 this.comboCPU.Items.Clear();
+                this.comboMCU.Items.Clear();
+                string cpus = Convert.ToString(selectedRow.Cells["cpu"].Value);
                 string mcus = Convert.ToString(selectedRow.Cells["mcu"].Value);
-                string[] arr = mcus.Split(',');
-                foreach (string mcu in arr)
-                    comboCPU.Items.Add(mcu);
+
+                string[] arrCPUs = cpus.Split(',');
+                foreach (string cpu in arrCPUs)
+                    comboCPU.Items.Add(cpu);
+
+                string[] arrMCUs = mcus.Split(',');
+                foreach (string mcu in arrMCUs)
+                    comboMCU.Items.Add(mcu);
+
                 comboCPU.SelectedIndex = 0;
+                comboMCU.SelectedIndex = 0;
 
                 //Hide comboCPU if no cpu selection is required
-                if (string.IsNullOrEmpty(mcus))
+                if (string.IsNullOrEmpty(cpus))
                 {
                     comboCPU.Visible = false;
                     lblCpu.Visible = false;
@@ -189,6 +210,16 @@ namespace SelectDevice
         private void button2_Click(object sender, EventArgs e)
         {
             loadBoards();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboCPU_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboMCU.SelectedIndex = comboCPU.SelectedIndex;
         }
     }
 }
