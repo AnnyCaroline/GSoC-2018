@@ -15,3 +15,9 @@
 }
 ```
 3. Add ```ceu-maker/bin``` to PATH environment variable
+
+## Add a shotcut for openInApplication
+In VSCode, open ```File > Preferences > Keyboard Shortcuts``` and search for ```openInApplication.open``` command. Double click on it, press the desired key combination and click ENTER.
+
+## References
+- [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor)
