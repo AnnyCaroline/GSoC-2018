@@ -1,4 +1,4 @@
-# Develop for Céu-Arduino using VSCode 
+# Céu-Maker with VSCode 
 ## Usage
 [![video](http://img.youtube.com/vi/iNG42KRNjjI/0.jpg)](http://www.youtube.com/watch?v=iNG42KRNjjI)
 
