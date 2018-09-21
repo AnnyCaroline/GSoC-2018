@@ -44,19 +44,18 @@ namespace SelectDevice
         {
             string port = "", vid = "", pid = "", sn = "";
 
-            // Use WMI to get info
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2",
-                "SELECT * FROM Win32_PnPEntity WHERE ClassGuid=\"{4d36e978-e325-11ce-bfc1-08002be10318}\"");
-
             // Read file
             try
             {
+                // Use WMI to get info
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2",
+                "SELECT * FROM Win32_PnPEntity WHERE ClassGuid=\"{4d36e978-e325-11ce-bfc1-08002be10318}\"");
+
                 #if DEBUG
                     string text = System.IO.File.ReadAllText(@"absolute-path-to\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
                     string text = System.IO.File.ReadAllText(currentPath + @"\..\arduino-1.8.3\hardware\arduino\avr\boards.txt");
                 #endif
 
@@ -131,9 +130,18 @@ namespace SelectDevice
                     }
                 }
             }
-            catch
+            catch (System.IO.FileNotFoundException ex)
             {
-                //Console.WriteLine("Error: Cannot open boards.txt");
+                MessageBox.Show("boards.txt not found: " + ex.ToString());
+            }
+            catch(System.IO.DirectoryNotFoundException ex)
+            {
+                MessageBox.Show("boards.txt not found: " + ex.ToString());
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show("Exception while trying to access serial ports. Check if your account have admin rights: " + ex.ToString());
+                return;
             }
 
         }
