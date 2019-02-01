@@ -26,6 +26,18 @@ C:\Users\AnnyC\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\Sele
 C:\Users\AnnyC\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Form1.resources
 C:\Users\AnnyC\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Properties.Resources.resources
 C:\Users\AnnyC\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe.config
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.pdb
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csprojAssemblyReference.cache
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Form1.resources
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.Properties.Resources.resources
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.GenerateResource.cache
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.CoreCompileInputs.cache
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.exe
+C:\Users\AnnyC\dev\old-ceu-maker\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.pdb
+=======
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe.config
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.exe
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\bin\Release\SelectDevice.pdb
@@ -36,3 +48,4 @@ C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Relea
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.csproj.CoreCompileInputs.cache
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.exe
 C:\Users\Anny\Desktop\Desktop\ceu-maker-gsoc\SelectDevice\SelectDevice\obj\Release\SelectDevice.pdb
+>>>>>>> 713f1f6cc0d047a0c5c711af70dadde1b55c8f58

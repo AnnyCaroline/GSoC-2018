@@ -52,11 +52,16 @@ namespace SelectDevice
                 "SELECT * FROM Win32_PnPEntity WHERE ClassGuid=\"{4d36e978-e325-11ce-bfc1-08002be10318}\"");
 
                 #if DEBUG
-                    string text = System.IO.File.ReadAllText(@"absolute-path-to\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+                    string text = System.IO.File.ReadAllText(@"absolute-path-to\arduino-1.8.8\hardware\arduino\avr\boards.txt");
                 #else
                     // get path of the executing assembly
                     string currentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+<<<<<<< HEAD
+
+                    string text = System.IO.File.ReadAllText(currentPath + @"\..\arduino-1.8.8\hardware\arduino\avr\boards.txt");
+=======
                     string text = System.IO.File.ReadAllText(currentPath + @"\..\arduino-1.8.3\hardware\arduino\avr\boards.txt");
+>>>>>>> 713f1f6cc0d047a0c5c711af70dadde1b55c8f58
                 #endif
 
                 this.dataGridView1.Rows.Clear();
@@ -87,7 +92,7 @@ namespace SelectDevice
 
                             //Get the VID and PID lines
                             string a = "";
-                            a = regex("[a-zA-Z]+" + Regex.Escape(".") + "vid" + Regex.Escape(".") + "[0-9]=0x" + vid + "(\r)(\n)[a-zA-Z]+" + Regex.Escape(".") + "pid" + Regex.Escape(".") + "[0-9]=0x" + pid, text.ToString());
+                            a = regex("[a-zA-Z]+" + Regex.Escape(".") + "vid" + Regex.Escape(".") + "[0-9]=0x" + vid + "((\r\n)|(\n))[a-zA-Z]+" + Regex.Escape(".") + "pid" + Regex.Escape(".") + "[0-9]=0x" + pid, text.ToString());
 
                             //Get first word from a
                             string b = "";
